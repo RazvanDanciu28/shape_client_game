@@ -9,7 +9,7 @@ import { ControlPanelComponent } from './control-panel/control-panel.component';
   declarations: [
     AppComponent,
     CanvasComponent,
-    ControlPanelComponent
+    ControlPanelComponent,
   ],
   imports: [
     BrowserModule

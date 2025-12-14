@@ -1,1 +1,24 @@
+<div class="shape-info-container">
+  <div class="shape-info">
+    Number of Current Shapes: {{ numberOfShapes }}
+  </div>
+
+  <div class="shape-info">
+    Surface Area Occupied by Shapes:
+    {{ totalShapesArea | number:'1.2-2' }} px²
+  </div>
+</div>
+
 <div #pixiContainer class="canvas-container"></div>
+
+<div class="control-group">
+  <button class="control-btn" (click)="decreaseGravity()">-</button>
+  <span class="control-value">Gravity Value: {{ gravity }}</span>
+  <button class="control-btn" (click)="increaseGravity()">+</button>
+</div>
+
+<div class="control-group">
+  <button class="control-btn" (click)="decreaseNumberOfShapesGeneratedPerSecond()">-</button>
+  <span class="control-value">Shapes / Second: {{ numberOfShapesGeneratedPerSecond }}</span>
+  <button class="control-btn" (click)="increaseNumberOfShapesGeneratedPerSecond()">+</button>
+</div>

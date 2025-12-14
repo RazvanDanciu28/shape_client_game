@@ -1,11 +1,70 @@
 .canvas-container {
   width: 500px;
   height: 500px;
-  margin: 0 auto;          
+  margin: 0 auto;
   position: relative;
-  top: 50px;               
-  border: 2px solid #000; 
+  top: 50px;
+  border: 2px solid #000;
 }
+
 canvas {
   display: block;
+}
+
+.shape-info-container {
+  display: flex;
+  gap: 20px;         
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shape-info {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 14px;    
+  text-transform: uppercase;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 6px 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.control-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.control-btn:hover {
+  background-color: #e4e4e4;
+}
+
+.control-btn:active {
+  transform: scale(0.92);
+}
+
+.control-value {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  color: #333;
 }
