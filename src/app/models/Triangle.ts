@@ -4,6 +4,7 @@ export class Triangle extends Shape {
     
     draw() {
         const g = this.graphics;
+        g.clear();
         g.fill(this.color);
 
         // draw the shape
@@ -11,5 +12,7 @@ export class Triangle extends Shape {
         g.lineTo(50, 0);
         g.lineTo(25, 50);
         g.closePath();
+
+        g.fill();
     }
 }

@@ -21,15 +21,20 @@ export abstract class Shape {
 
     abstract draw(): void;
 
-    update() {
+    public update() {
         // update the y position with the gravity value
         this.position.y += this.gravity
         this.graphics.x = this.position.x;
         this.graphics.y = this.position.y;
     }
 
-    isShapeOutOfBounds() {
-        // implement later;
+    public isOutOfBounds(canvasWidth: number, canvasHeight: number, offset: number = 50): boolean {
+        return (
+            this.position.y > canvasHeight + offset ||   
+            this.position.y < -offset ||                
+            this.position.x > canvasWidth + offset ||  
+            this.position.x < -offset                  
+        );
     }
 
     // other methods

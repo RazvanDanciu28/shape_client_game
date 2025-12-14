@@ -3,8 +3,9 @@ import { Shape } from "./Shape";
 export class Circle extends Shape {
     draw() {
         const g = this.graphics;
+        g.clear();
         g.fill(this.color);
-        // radius 1 by default
-        g.ellipse(this.position.x, this.position.y, 1, 1);
+        g.ellipse(0, 0, 25, 25); 
+        g.fill();
     }
 }
